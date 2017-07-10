@@ -1,0 +1,52 @@
+// DenturedExample.dt
+fn main(){
+
+  println!("This is a programme written in Dentured") // You don't need semicolons to terminate statements if they're on separate lines
+  testConditions()
+  testInput()
+  println!(testReturn(50), "is bigger than", 25) // outputs `50 is bigger than 25`
+  println!(testVoidReturn(50), "is equal to", void)
+  testSystemProperties()
+  testLambdas()
+}
+
+fn testInput(){
+
+  print!("Please enter your name: ")
+  println!("Hello,", input!) //If you don't supply a method with any arguments, you don't need to use any parenthesis
+  println!() // Although you are still able to
+  // ^ That outputs a new empty line
+
+}
+
+fn testReturn($argument){
+  $argument // returns the argument `argument`
+}
+
+fn testVoidReturn($argument){
+  $argument
+  void // instead returns `void`
+}
+
+fn testConditions(){
+
+  if(true){
+    println!("something") // This outputs something
+  }
+  if(false){
+    println!("something as well") // This line will not be executed
+  }
+}
+
+fn testSystemProperties(){
+    println!("This programme is running on Java version", property.java.version)
+    println!("This machine uses", property.os.name)
+}
+fn testLambdas(){
+
+    run{
+        println!("This is inside a lambda")
+    }
+
+}
+main()

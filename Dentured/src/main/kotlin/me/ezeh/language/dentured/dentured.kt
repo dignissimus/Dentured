@@ -17,7 +17,7 @@ fun main(args: Array<String>) {
     } else if (!line.hasOption("f")) {
         println("Please enter the file you would like to be executed")
     }
-    val fileName = line.getOptionValue("-f")
+    val fileName = line.getOptionValue("f")
     val file = File(fileName)
     val code = file.readText()
     Parser(Lexer(code).lex()).execute()
